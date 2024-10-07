@@ -1,3 +1,11 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "parser": "@typescript-eslint/parser",
+  "extends": ["next/core-web-vitals", "next/typescript", "plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
+  "plugins": ["@typescript-eslint", "prettier", "unused-imports"],
+  "rules": {
+    "prettier/prettier": ["error", { "printWidth": 80, "tabWidth": 2, "singleQuote": true, "trailingComma": "all", "arrowParens": "always" }],
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-explicit-any": "error",
+    "no-unused-imports": "error"
+  }
 }
