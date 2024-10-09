@@ -1,3 +1,7 @@
 export default function Home() {
-  return <div className="text-2xl font-bold text-red-900">Task Manager</div>;
+  return (
+    <>
+      <main className="bg-whiteSmoke h-full w-full">Task Manager</main>
+    </>
+  );
 }
