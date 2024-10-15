@@ -26,7 +26,7 @@ const Button = ({
   });
 
   const variantClasses = clsx('rounded-md px-4 py-2', {
-    'bg-purple text-white': variant === 'solid',
+    'bg-purple': variant === 'solid',
     'border border-purple text-purple': variant === 'outline',
   });
 

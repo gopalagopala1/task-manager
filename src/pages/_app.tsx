@@ -5,7 +5,9 @@ import BaseLayout from '@/layouts/BaseLayout';
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <BaseLayout>
-      <Component {...pageProps} />
+      <div className="py-4 px-6 h-full">
+        <Component {...pageProps} />
+      </div>
     </BaseLayout>
   );
 }

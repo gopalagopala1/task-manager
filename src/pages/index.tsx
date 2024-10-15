@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <>
-      <div className="h-full flex flex-col px-6 items-center justify-center gap-10">
+      <div className="h-full flex flex-col items-center justify-center gap-10">
         <Image
           src="/images/background.png"
           alt="background"
@@ -31,7 +31,7 @@ export default function Home() {
           text="Let's Get Started"
           variant="solid"
           size="lg"
-          className="w-full shadow-lg"
+          className="w-full shadow-lg text-white"
           onClick={() => {}}
         />
       </div>
